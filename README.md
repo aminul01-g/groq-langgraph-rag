@@ -1,8 +1,8 @@
-# 🤖 RAG Chatbot - Intelligent Document Q&A with Web Search
+#  RAG Chatbot - Intelligent Document Q&A with Web Search
 
 A sophisticated Retrieval-Augmented Generation (RAG) chatbot built with **LangGraph**, **Groq**, **Pinecone**, and **Streamlit**. Combines document-based knowledge retrieval with real-time web search capabilities for comprehensive answers.
 
-## ✨ Features
+##  Features
 
 - 📚 **Document Upload & Indexing** - Upload PDF documents and automatically index them in Pinecone vector database
 - 🔍 **Semantic Search** - Retrieve relevant document chunks using semantic embeddings
@@ -34,8 +34,8 @@ A sophisticated Retrieval-Augmented Generation (RAG) chatbot built with **LangGr
     ┌──────┴──────┬──────────┬─────────┐
     ▼             ▼          ▼         ▼
 ┌────────┐  ┌──────────┐ ┌─────┐  ┌──────────┐
-│LangGraph│  │Pinecone  │ │Groq │  │ Tavily   │
-│ Agent   │  │ Vector DB│ │ LLM │  │Web Search│
+│LangGraph│ │Pinecone  │ │Groq │  │ Tavily   │
+│ Agent   │ │ Vector DB│ │ LLM │  │Web Search│
 └────────┘  └──────────┘ └─────┘  └──────────┘
 ```
 
@@ -357,27 +357,6 @@ docker-compose up -d --build
   - Set up authentication/authorization
   - Rate limiting on API endpoints
   - Run in isolated network
-
-## 🚀 Deployment Options
-
-### AWS
-```bash
-# ECR for images, ECS for orchestration
-docker tag rag-chatbot-backend:latest <aws-account>.dkr.ecr.<region>.amazonaws.com/rag-chatbot-backend
-docker push <aws-account>.dkr.ecr.<region>.amazonaws.com/rag-chatbot-backend
-```
-
-### Google Cloud
-```bash
-gcloud builds submit --tag gcr.io/<project>/rag-chatbot-backend
-gcloud run deploy rag-chatbot-backend --image gcr.io/<project>/rag-chatbot-backend
-```
-
-### Kubernetes
-```yaml
-# Use provided docker-compose as reference
-# Create Kubernetes manifests for deployment
-```
 
 ## 📚 Dependencies
 
