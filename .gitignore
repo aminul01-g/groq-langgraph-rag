@@ -1,0 +1,113 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+venv.bak/
+env.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/
+.streamlit/.streamlit/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+langgraph_state.db
+langgraph_checkpoints.db
+
+# Data and uploads
+data/
+uploads/
+*.pdf
+
+# Logs
+*.log
+logs/
+
+# Node modules (if any frontend uses npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+.dockerignore
+Dockerfile
+Dockerfile.*
+
+# Misc
+.cache/
+tmp/
+temp/
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/settings.json
+.vscode/extensions.json
+IntelliSense.log
+
+# Credentials and secrets
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Research papers and documents (keep repo lightweight)
+*.docx
+*.xlsx
+*.ppt
+*.pptx
